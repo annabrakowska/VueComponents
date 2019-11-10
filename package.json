@@ -5,7 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "compile": "node-sass ./src/styles/main.scss",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build --name index --target lib src/index.js",
     "lint": "vue-cli-service lint",
     "styleguide": "vue-cli-service styleguidist",
     "styleguide:build": "vue-cli-service styleguidist:build"
