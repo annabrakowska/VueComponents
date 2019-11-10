@@ -5,7 +5,6 @@ module.exports = {
   title: 'Vue Components',
   version: version,
   pagePerSection: true,
-  copyCodeButton: true,
   exampleMode: 'expand',
   usageMode: 'expand',
   defaultExample: false,
