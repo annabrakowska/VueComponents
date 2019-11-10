@@ -1,27 +1,31 @@
+const path = require('path');
 const { version } = require('./package.json');
 
 module.exports = {
   title: 'Vue Components',
   version: version,
   pagePerSection: true,
+  copyCodeButton: true,
   exampleMode: 'expand',
   usageMode: 'expand',
   defaultExample: false,
+  ribbon: {
+    url: 'https://github.com/AnnaBrakowska/VueComponents',
+    text: 'Fork me on GitHub'
+  },
+  require: [path.join(__dirname, 'src/styles/main.scss')],
   sections: [
     {
       name: 'Installation',
-      components: 'styleguide/pages/installation.md'
+      content: 'styleguide/pages/installation.md'
     },
     {
       name: 'Colors',
-      components: 'styleguide/pages/colors.md'
+      content: 'styleguide/pages/colors.md'
     },
     {
       name: 'Components',
       components: ['src/components/Loader.vue']
     }
   ]
-  // webpackConfig: {
-  //   // custom config goes here
-  // }
 };
