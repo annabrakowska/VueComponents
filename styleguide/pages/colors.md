@@ -80,3 +80,23 @@ li {
 }
 </style>
 ```
+
+To change the color of a chosen inline content use `.color-*`. See example below:
+
+```
+<div>
+  <p class='color-primary'     >Sample text</p>
+  <p class='color-secondary'   >Sample text</p>
+  <p class='color-black'       >Sample text</p>
+  <p class='color-white'       >Sample text</p>
+  <p class='color-gray'        >Sample text</p>
+  <p class='color-gray-dark'   >Sample text</p>
+  <p class='color-gray-light'  >Sample text</p>
+  <p class='color-danger'      >Sample text</p>
+  <p class='color-warning'     >Sample text</p>
+  <p class='color-success'     >Sample text</p>
+  <p class='color-info'        >Sample text</p>
+  <p class='color-light'       >Sample text</p>
+</div>
+
+```
