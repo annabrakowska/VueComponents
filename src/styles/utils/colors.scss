@@ -1,0 +1,17 @@
+$colorList: (
+  ('primary', $color-primary),
+  ('secondary', $color-secondary),
+  ('light', $color-light),
+  ('black', $color-black),
+  ('white', $color-white),
+  ('gray-light', $color-gray-light),
+  ('gray-dark', $color-gray-dark),
+  ('danger', $color-danger),
+  ('warning', $color-warning),
+  ('success', $color-success),
+  ('info', $color-info)
+);
+
+@each $c in $colorList {
+  @include generateColorClasses($name: nth($c, 1), $color: nth($c, 2));
+}

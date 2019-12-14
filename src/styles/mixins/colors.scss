@@ -1,0 +1,5 @@
+@mixin generateColorClasses($name, $color) {
+  .color-#{$name} {
+    color: $color;
+  }
+}
